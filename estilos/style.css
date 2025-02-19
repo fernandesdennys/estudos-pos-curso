@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+  --color-01: #0077B6;
+  --color-02: #90E0EF;
+  --color-03: #333333;
+  --color-04: #F8F9FA;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-04) ;
+}
+
+header {
+  background-color: var(--color-01);
+  color: var(--color-04);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+nav > ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--color-02);
+  padding: 10px 0;
+  text-align: center;
+}
+
