@@ -13,15 +13,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html, body {
   background-color: var(--color-04) ;
 }
-
 header {
   background-color: var(--color-01);
   color: var(--color-04);
-  padding: 10px 0;
   text-align: center;
+  padding: 5px;
 }
 
 header h1 {
@@ -31,8 +30,30 @@ nav > ul {
   display: flex;
   text-decoration: none;
   list-style: none;
-  background-color: var(--color-02);
-  padding: 10px 0;
+  padding-top: 50px;
   text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+}
+nav > ul > li {
+  display: block;
+  padding: 10px;
+}
+
+nav > ul > li > a {
+  color: var(--color-04);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-01);
+    background-color: var(--color-03);
+    border-radius: 10px;
+    margin: 0 8px;
+    padding: 10px;
+    transition:all 0.5s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+    
+  }
+}
+main {
+
 }
 
