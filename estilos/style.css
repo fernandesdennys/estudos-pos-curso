@@ -29,70 +29,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   background-color: var(--color-04) ;
 }
 
-header {
-  width: 100vw;
-  height: 250px;
-  background-image: linear-gradient(to left, var(--color-01), var(--color-02), transparent);
-  display: flex;
-  padding: 0 10px;
-  justify-content: left;
-  flex-flow: row nowrap;
-  align-content: space-between;
-  border-radius: 0px 0px 0px 100px;               
-}
-
-header > nav > ul {
-  display: flex;
-  list-style: none;
-  position: relative;
-  top: 210px;
-  left: 125px;      
-}
-
-header > nav > ul > li > a {
-  text-decoration: none;
-  color: var(--color-03);
-  font-size: 1.2em;
-  font-family: var(--fonte-02);
-  padding: 5px; 
- 
-}
-header > nav > ul > li > a:hover {
-  background-color: var(--color-03);
-  color: var(--color-04);
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow:  0px 0px 8px var(--color-03);
-  text-shadow: 0px 0px 8px var(--color-04);
-  border: 1px solid var(--color-04);
-  transition:ease-out 0.4s;
-
-}
-
-img {   
-    position: relative;
-    top: 15px;
-    left: 55px;     
-    border:  3px solid, aqua;  
-    border-radius: 50%;
-    box-shadow: 4px 4px 10px; 
-}
-
-header > div > h3 {
-    text-shadow: 2px 2px 8px var(--color-03);
-    color: aliceblue;
-    font-size: 1.2em;
-    position: relative;
-    left: 50px;                
-}
-
-header > div {
-    width: 400px;
-    height: 235px; 
-    border-radius: 0 0 0 100px;
-    background-image: linear-gradient(to right, var(--color-03), transparent); transparent );                
-}
