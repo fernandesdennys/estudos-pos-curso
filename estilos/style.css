@@ -34,3 +34,54 @@ html, body {
   background-color: var(--color-04) ;
 }
 
+header {
+  background-color: var(--color-01);
+}
+
+nav {
+  background-color: var(--color-02);
+}
+
+div {
+  background-color: var(--color-03);
+}
+
+aside {
+  background-color: var(--color-01);
+}
+
+main {
+  background-color: var(--color-02);
+}
+
+.md1 {
+  background-color: var(--color-03);
+}
+
+.md2 {
+  background-color: var(--color-04);
+}
+
+.md3 {
+  background-color: var(--color-01);
+}
+
+.md4 {
+  background-color: var(--color-03);
+}
+
+.md5 {
+  background-color: var(--color-04);
+}
+
+footer {
+  background-color: black;
+  color: var(--color-04);
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: var(--color-02);
+  font-weight: bolder;
+}
+
