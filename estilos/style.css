@@ -35,6 +35,10 @@ html, body {
   height: 100vh;
   width: 100vw;
 }
+body {
+  background-image: url(../imagens/espaco.jpg);
+  background-size: cover;
+}
 
 header {
   background-color: var(--color-01);
@@ -69,7 +73,8 @@ nav > a:hover {
   border: 1px solid var(--color-03);
   color: var(--color-03);
   font-weight: bolder;
-  transition: all 0.5s;
+  transform: scale(1.2);
+  transition: all 0.3s;
     
 }
 main {
@@ -83,6 +88,7 @@ div {
   padding: 20px;
   border-radius: 50px 0px;
   height: 450px;
+  border:  6px solid var(--color-02);
 }
 div > img {
   max-width: 100px;
@@ -101,6 +107,15 @@ aside {
   font-family: var(--fonte-03);
   font-size: 0.9em;
   text-align: center;
+} 
+aside > a > img {
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--color-03);  
+}
+aside > a > img:hover {
+  transform: scale(0.8);
+  transition: transform .5s;
 }
 
 article {
@@ -131,11 +146,13 @@ article {
 footer {
   background-color: black;
   color: var(--color-04);
+  padding: 5px;
 }
 
 footer > p > a {
   text-decoration: none;
   color: var(--color-02);
   font-weight: bolder;
+  
 }
 
