@@ -11,18 +11,25 @@ header {
 }
 
 header > h1 {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 nav {
   display: flex;
+  margin: auto;
+  width: 250px;
   flex-flow: column nowrap;
-  justify-content: space-between; 
+  justify-content: space-between;
+
 }
 
 div {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+div > img {
+  max-width: 120px;
+  
 }
 aside {
   display: flex;
@@ -42,19 +49,20 @@ aside {
   nav {
     display: flex;
     padding-top: 20px;
-    justify-content: space-evenly;   
-  
+    justify-content: space-around;  
   }
   nav > a {
-    width: 160px;
+    width: 170px;
   }
 
   div {
       width: 70vw;
       border-radius: 50px;
   }
+
   div > img {
-    max-width: 150px;
+    max-width: 200px;
+    
 
   }
   aside {
@@ -62,5 +70,6 @@ aside {
     flex-flow: column nowrap;
     height: 200px;
     justify-content: center;
-    
+    border-radius: 50px;  
+}
 }
