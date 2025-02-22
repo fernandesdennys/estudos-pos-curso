@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 545px) {  
+}
+
 body {
     
 }
 header {
-  height: 270px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+
 }
-header, header > nav {
+nav {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between; 
 }
 
-header > nav > .a1 {
-    align-self: flex-start;   
-}
 
 div {
     display: flex;
@@ -25,4 +28,34 @@ aside {
   display: flex;
   flex-flow: column nowrap;
 }
+
+
+@media screen and(min-width: 545px)and(max-width: 1023px) {
+}
+body {
+    
+}
+header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+
+}
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; 
+}
+
+
+div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
   
