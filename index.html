@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos HTML3/CSS3</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/mediaquery.css" media=" screen and (max-width: 545px)">
     
 </head>
-    <body mudouTamanh>
+    <body>
         <header> 
-            <h1>Curso HTML5/CSS3</h1>
-            <span id="m1" class="material-icons" onclick="clickMenu()">menu</span>    
-    
-</header>
-<main>
-    <nav id="menu">
-            <a href="#">Introdução</a>
-            <a href="#">Fundamentos</a>
+            <h1>Curso HTML5/CSS3</h1>    
+    <nav>
+        <a href="#">Introdução</a>
+            <a href="#" class="a1">Fundamentos</a>
             <a href="#">Proj. Prático</a>
             <a href="#">Tec. Avançadas</a>
             <a href="#">Conclusão</a>
         </ul>
     </nav>
+</header>
+<main>
 <div>                
         <img src="imagens/foto-perfil-guanabara.png" alt="Professor Gustavo Guanabara">
         <h3>Professor<br> Gustavo Guanabara</h3>     
@@ -59,26 +56,6 @@
         </footer>
 
     </main>
-</main>
-<script>
-    function mudouTamanho() {
-        if (window.innerWidth >= 768) {
-            itens.style.display = 'block'
-        }   else {
-            itens.style.display = 'none'
-        }
-    }
-
-    var menu = document.getElementById('menu');
-    function clickMenu() {
-     if (menu.style.display == 'block') {
-         menu.style.display = 'none'
-     
-   } else {
-    menu.style.display = 'block'
-   }
-}
-</script>
     
 </body>
 </html>
