@@ -39,17 +39,28 @@ aside {
   header > h1 {
       font-size: 3.2em;
   }
+  nav {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;   
+  
+  }
+  nav > a {
+    width: 160px;
+  }
 
   div {
       width: 70vw;
+      border-radius: 50px;
   }
   div > img {
-    margin:auto;
+    max-width: 150px;
 
   }
   aside {
     display: flex;
     flex-flow: column nowrap;
-    height: 250px;
+    height: 200px;
     justify-content: center;
+    
 }
