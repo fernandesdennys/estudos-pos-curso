@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 545px) {  
-}
+/* 📱 Para telas menores que 545px (Celulares) */
+@media screen and (max-width: 545px) {  
 
-body {
-    
-}
 header {
   display: flex;
-  height: 100px;
+  height: 70px;
   justify-content: center;
+  border-radius: 50px;
+}
 
+header > h1 {
+  font-size: 1.7em;
 }
 nav {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between; 
 }
-
 
 div {
     display: flex;
@@ -28,34 +28,28 @@ aside {
   display: flex;
   flex-flow: column nowrap;
 }
-
-
-@media screen and(min-width: 545px)and(max-width: 1023px) {
-}
-body {
-    
-}
-header {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-
-}
-nav {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between; 
 }
 
+@media screen and (min-width: 546px) and (max-width: 1023px) {  
+  header {
+      height: 70px;
+      border-radius: 50px 0px 50px 0px;
+  }
 
-div {
+  header > h1 {
+      font-size: 3.2em;
+  }
+
+  div {
+      width: 70vw;
+  }
+  div > img {
+    margin:auto;
+
+  }
+  aside {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    height: 250px;
+    justify-content: center;
 }
-aside {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-  

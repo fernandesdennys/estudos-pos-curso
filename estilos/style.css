@@ -44,10 +44,12 @@ body {
 }
 
 header {
+  display: block;
   background-color: var(--color-01);
   text-align: center;
   box-shadow:  0px 4px 10px black;
   border-radius: 50px 0px 50px 0px;
+  transition: border-radius 0.5s ease-in-out;
 }
 header > h1 {
   font-family: var(--fonte-01);
@@ -97,6 +99,7 @@ div {
   border:  6px solid var(--color-02);
 }
 div > img {
+  display: flex;
   max-width: 100px;
   border: solid var(--color-02);
   border-radius: 50%;
