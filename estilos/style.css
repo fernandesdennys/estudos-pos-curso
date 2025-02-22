@@ -37,7 +37,7 @@ html, body {
 }
 body {
   background-image: url(../imagens/espaco.jpg);
-  background-size: cover;
+  background-size: cover no-repeat;
 }
 
 header {
