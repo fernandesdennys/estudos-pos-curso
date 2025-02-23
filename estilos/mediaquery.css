@@ -31,29 +31,20 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 769px) {
   header {
     display: flex;
     height: 70px;
     justify-content: center;
     border-radius: 50px;
   }
-
-  header > h1 {
-    font-size: 2em;
-  }
   nav {
     display: flex;
     margin: auto;
     width: 250px;
     flex-flow: column nowrap;
-    justify-content: space-between;
-  }
-  div {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
+    
+  }  
   div > picture > img {
     max-width: 120px;
     display: flex;
@@ -73,9 +64,8 @@
   }
 }
 
-@media screen and (min-width: 546px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   header {
-    height: 70px;
     border-radius: 0px;
   }
 
@@ -92,13 +82,18 @@
   }
 
   div {
-    display: block;
-    width: 70vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 80%;
     border-radius: 50px;
   }
 
   div > picture > img {
-    max-width: 155px;
+    max-width: 30%; /* Garante que a imagem nunca fique maior que o container */
+    width: auto;
     display: flex;
     margin: auto;
     outline: solid 2px var(--color-02);
@@ -113,13 +108,13 @@
   aside {
     display: flex;
     flex-flow: column nowrap;
-    height: 200px;
+    max-height: 250px;
     justify-content: center;
     border-radius: 50px;
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1300px) {
+@media screen and (min-width: 1024.2px) and (max-width: 1300px) {
   header {
     display: flex;
     height: 150px;
@@ -127,20 +122,19 @@
   header > h1 {
     font-size: 4em;
   }
-  nav {
-  }
   div {
     background-color: #3333339f;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    width: 70vw;
+    width: 70%;
     position: relative;
   }
   div > picture > img {
-    width: 200px;
-    height: 310px;
+    width: auto;
+    width: 20vw;
+    height: 50vh;
     margin: 90px 45px 0px 10px;
     outline: ridge 10px var(--color-03);
   }

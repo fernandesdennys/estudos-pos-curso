@@ -30,8 +30,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   background-color: var(--color-04);
   overflow-x: hidden;
   height: 100vh;
@@ -46,9 +45,11 @@ body {
 }
 
 header {
-  display: block;
+  display: flex;
+  height: 70px;
   background-color: var(--color-01);
   text-align: center;
+  justify-content: center;
   box-shadow: 0px 4px 10px var(--color-02);
   border-radius: 50px 0px 50px 0px;
   transition: border-radius 0.5s ease-in-out;
@@ -65,6 +66,7 @@ header > h1 {
 nav {
   padding: 10px 0px 15px 0px;
   text-align: center;
+  
 }
 
 nav > a {
@@ -76,7 +78,7 @@ nav > a {
   outline: 2px solid var(--color-02);
   border-radius: 10px;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 4px;
   box-shadow: 0px 0px 10px var(--color-02);
 }
 
@@ -90,18 +92,23 @@ nav > a:hover {
 }
 main {
   padding-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 div {
   background-color: var(--color-03);
-  width: 90vw;
+  width: 80%;
+  height: 100%;
   margin: auto;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   border-radius: 50px 0px;
-  height: 450px;
   border: 6px solid var(--color-02);
   transition: border-radius 0.5s ease-in-out;
 }
+
 
 div > h3 {
   color: var(--color-04);
