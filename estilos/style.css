@@ -101,17 +101,7 @@ div {
   height: 450px;
   border:  6px solid var(--color-02);
   transition: border-radius 0.5s ease-in-out;
-}
-div > img {
-  display: flex;
-  margin: auto;
-  max-width: 100px;
-  border: solid var(--color-02);
-  border-radius: 50%;
-}
-div > img:hover {
-  box-shadow: 0px 0px 30px var(--color-02);
-  transition: box-shadow 0.4s ease-out; 
+  
 }
 
 div > h3 {
@@ -119,6 +109,8 @@ div > h3 {
   text-align: center;
   font-weight: lighter;
   margin-top: 5px;
+
+  
 }
 
 aside {
@@ -130,6 +122,7 @@ aside {
   text-align: center;
   border-radius: 50px 0px 50px 0px;
   transition: border-radius 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 10px;
 }
 
 aside > a > img {
@@ -143,7 +136,7 @@ aside > a {
 aside > a > img:hover {
   transform: scale(0.9);
   border-radius: 50px;
-  transition: border-radius 0.6s ease-in-out;;
+  transition: border-radius 0.6s ease-in-out;
 }
 
 article {
