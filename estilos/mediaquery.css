@@ -118,6 +118,7 @@
   }
   nav > a {
     flex-basis: 200px;
+    background-color: #3333339f;
   }
   div {
     background-color: #3333339f;
@@ -143,7 +144,8 @@
     border-radius: 50px;
   }
   aside > a > img {
-    width: 120px;
+    width: 100px;
     margin-top: 40px;
+    outline: 8px solid var(--color-03);
   }
 }
