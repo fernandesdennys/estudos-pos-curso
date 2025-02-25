@@ -155,34 +155,32 @@ article > section {
   font-size: 1.5em;
   text-align: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 25px;
   width: 80%;
   height: 500px;
 }
 
 #md1 {
   background-color: var(--color-03);
-  scroll-margin-top: 200px;
+  
 }
 
 #md2 {
   background-color: var(--color-04);
-  scroll-margin-top: 200px;
 }
 
 #md3 {
   background-color: var(--color-01);
-  scroll-margin-top: 150px;
 }
 
 #md4 {
   background-color: var(--color-03);
-  scroll-margin-top: 150px;
 }
 
 #md5 {
   background-color: var(--color-04);
-  scroll-margin-top: 150px;
+  margin-bottom: 50px;
+  
 }
 
 footer {
@@ -190,7 +188,6 @@ footer {
   color: var(--color-04);
   text-align: center;
   font-family: var(--fonte-01);
-  padding: 5px;
 }
 footer > p > a {
   text-decoration: none;
