@@ -98,8 +98,10 @@
     max-height: 250px;
     justify-content: center;
   }
+  article > section#md1 {
+    scroll-margin-top: 100px;
+  }
 }
-
 @media screen and (min-width: 1024.2px) and (max-width: 1300px) {
   header {
     height: 100px;
