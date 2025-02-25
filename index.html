@@ -6,17 +6,34 @@
     <title>Estudos HTML3/CSS3</title>
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/mediaquery.css" />
+    <style>
+      @keyframes appear {
+        from{
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+      .block {
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Curso HTML5/CSS3</h1>
     </header>
     <nav>
-      <a href="#">Introdução</a>
-      <a href="#">Fundamentos</a>
-      <a href="#">Proj. Prático</a>
-      <a href="#">Tec. Avançadas</a>
-      <a href="#">Conclusão</a>
+      <a href="#md1">Introdução</a>
+      <a href="#md2">Fundamentos</a>
+      <a href="#md3">Proj. Prático</a>
+      <a href="#md4">Tec. Avançadas</a>
+      <a href="#md5">Conclusão</a>
     </nav>
 
     <main>
@@ -58,22 +75,22 @@
         </aside>
       </div>
 
-      <article>
-        <section class="md1">
-          <h2>Módulo 1</h2>
+      <article class="scroll">
+        <section id="md1" class="block">
+          <h2>Módulo 1 - Introducão</h2>
         </section>
 
-        <section class="md2">
-          <h2>Módulo 2</h2>
+        <section id="md2" class="block">
+          <h2>Módulo 2 - Fundamentos</h2>
         </section>
-        <section class="md3">
-          <h2>Módulo 3</h2>
+        <section id="md3" class="block">
+          <h2>Módulo 3 - Projéto Prátiico</h2>
         </section>
-        <section class="md4">
-          <h2>Módulo 4</h2>
+        <section id="md4" class="block">
+          <h2>Módulo 4 - Técnicas Avançadas</h2>
         </section>
-        <section class="md5">
-          <h2>Módulo 5</h2>
+        <section id="md5" class="block">
+          <h2>Módulo 5 - Conclução</h2>
         </section>
       </article>
 
