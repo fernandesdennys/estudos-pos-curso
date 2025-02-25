@@ -162,9 +162,7 @@ article > section {
 
 #md1 {
   background-color: var(--color-03);
-  
 }
-
 #md2 {
   background-color: var(--color-04);
 }
@@ -180,7 +178,6 @@ article > section {
 #md5 {
   background-color: var(--color-04);
   margin-bottom: 50px;
-  
 }
 
 footer {
