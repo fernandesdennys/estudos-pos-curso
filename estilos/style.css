@@ -37,7 +37,6 @@ body {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-  
 }
 body {
   background-image: url(../imagens/espaco.jpg);
@@ -150,9 +149,8 @@ aside > a > img:hover {
 
 article {
   padding-top: 10px;
-  
 }
-article > section {  
+article > section {
   font-family: var(--fonte-01);
   font-size: 1.5em;
   text-align: center;
@@ -163,28 +161,28 @@ article > section {
 }
 
 #md1 {
-  background-color: var(--color-03);  
+  background-color: var(--color-03);
   scroll-margin-top: 300px;
 }
 
 #md2 {
- background-color: var(--color-04);
- scroll-margin-top: 150px;
+  background-color: var(--color-04);
+  scroll-margin-top: 150px;
 }
 
 #md3 {
- background-color: var(--color-01);
- scroll-margin-top: 150px;
+  background-color: var(--color-01);
+  scroll-margin-top: 150px;
 }
 
 #md4 {
- background-color: var(--color-03);
- scroll-margin-top: 150px;
+  background-color: var(--color-03);
+  scroll-margin-top: 150px;
 }
 
 #md5 {
- background-color: var(--color-04);
- scroll-margin-top: 150px;
+  background-color: var(--color-04);
+  scroll-margin-top: 150px;
 }
 
 footer {
@@ -194,7 +192,6 @@ footer {
   font-family: var(--fonte-01);
   padding: 5px;
 }
-
 footer > p > a {
   text-decoration: none;
   color: var(--color-02);
