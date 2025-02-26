@@ -50,8 +50,6 @@ header {
   display: flex;
   height: 70px;
   background-color: var(--color-01);
-  text-align: center;
-  justify-content: center;
   box-shadow: 0px 4px 10px var(--color-02);
   transition: border-radius 0.5s ease-in-out;
 }
@@ -62,6 +60,16 @@ header > h1 {
   padding-bottom: 10px;
   text-shadow: 0px 0px 10px var(--color-02);
   margin: auto;
+}
+div {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 15px;
+  flex-flow: row nowrap;
+}
+header > div > a {
+ text-decoration: none;
+ padding: 5px;  
 }
 
 nav {
@@ -76,6 +84,7 @@ nav > a {
   color: var(--color-02);
   font-family: var(--fonte-01);
   font-size: 0.8em;
+  font-size: 1.1em;
   outline: 2px solid var(--color-02);
   border-radius: 10px;
   margin: 5px;
@@ -89,7 +98,7 @@ nav > a:hover {
   color: var(--color-03);
   font-weight: bolder;
   transform: scale(1.2);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 main {
   padding-top: 10px;
@@ -97,7 +106,7 @@ main {
   flex-flow: column nowrap;
 }
 
-div {
+div#info {
   display: flex;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -113,7 +122,7 @@ div {
   transition: border-radius 0.5s ease-in-out;
 }
 
-div > h3 {
+div#info > h3 {
   color: var(--color-04);
   text-align: center;
   font-weight: lighter;
@@ -152,7 +161,11 @@ article {
   padding-top: 10px;
 }
 article > section {
+  display: flex;
+  background-color: var(--color-03);
+  box-shadow: 0px 0px 15px inset var(--color-04);
   font-family: var(--fonte-01);
+  border-radius: 20px;
   font-size: 1.5em;
   text-align: center;
   margin: auto;
@@ -161,26 +174,29 @@ article > section {
   height: 500px;
   scroll-margin-top: 150px;
 }
+article > section > h2 {
+  font-size: 1em;
+  background-color: var(--color-02);
+  box-shadow:  0px 0px 10px inset var(--color-03);
+  border-radius: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
 
-#md1 {
-  background-color: var(--color-03);
+#md1 { 
+  
 }
 #md2 {
-  background-color: var(--color-04);
-  
 }
 
 #md3 {
-  background-color: var(--color-01);
 }
 
 #md4 {
-  background-color: var(--color-03);
 }
 
 #md5 {
-  background-color: var(--color-04);
-  margin-bottom: 50px;
 }
 
 footer {
@@ -188,6 +204,7 @@ footer {
   color: var(--color-04);
   text-align: center;
   font-family: var(--fonte-01);
+  margin-top: 50px;
 }
 footer > p > a {
   text-decoration: none;

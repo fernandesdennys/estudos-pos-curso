@@ -116,16 +116,16 @@
     flex-basis: 200px;
     background-color: #333333fd;
   }
-  div {
+  div#info {
     position: relative;
   }
-  div > picture > img {
+  div#info > picture > img {
     height: 42vh;
     margin: auto;
     margin: 55px 70px 40px 20px;
     outline: ridge 10px var(--color-03);
   }
-  div > h3 {
+  div#info > h3 {
     font-family: var(--fonte-03);
     color: var(--color-03);
     font-size: 1.3em;
@@ -164,13 +164,13 @@
     flex-flow: row nowrap;
     flex-basis: 245px;
   }
-  div > picture > img {
+  div#info > picture > img {
     height: 40vh;
     margin: 60px 30px 30px 30px;
     outline: ridge 10px var(--color-03);
   }
 
-  div > h3 {
+  div#info > h3 {
     font-family: var(--fonte-03);
     text-shadow: 0px 0px 2px var(--color-04);
     color: var(--color-03);
