@@ -39,15 +39,19 @@
   header > h1 {
     font-size: 1.7em;
   }
+  div#icon > a > img {
+    width: 25px;
+  }
+
   nav {
     margin: auto;
     width: 200px;
     flex-flow: column nowrap;
   }
-  div {
+  div#info {
     flex-flow: column nowrap;
   }
-  div > picture > img {
+  div#info > picture > img {
     max-width: 120px;
     display: flex;
     margin: auto;
@@ -55,7 +59,7 @@
     border-radius: 50%;
   }
 
-  div > picture > img:hover {
+  div#info > picture > img:hover {
     box-shadow: 0px 0px 30px var(--color-03);
     transition: box-shadow 0.4s ease-out;
   }
@@ -65,6 +69,10 @@
   header > h1 {
     font-size: 3.2em;
   }
+  div#icon > a > img {
+    width: 35px;
+  }
+
   nav {
     padding-top: 20px;
     justify-content: space-evenly;
@@ -73,14 +81,14 @@
     width: 170px;
   }
 
-  div {
+  div#info {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     max-width: 900px;
   }
 
-  div > picture > img {
+  div#info > picture > img {
     max-width: 30%; /* Garante que a imagem nunca fique maior que o container */
     width: auto;
     display: flex;
@@ -89,7 +97,7 @@
     border-radius: 50%;
   }
 
-  div > picture > img:hover {
+  div#info > picture > img:hover {
     box-shadow: 0px 0px 30px var(--color-03);
     transition: box-shadow 0.4s ease-out;
   }
@@ -109,6 +117,10 @@
   header > h1 {
     font-size: 3em;
   }
+  div#icon > a > img {
+    width: 40px;
+  }
+
   nav {
     justify-content: space-evenly;
   }
@@ -154,6 +166,10 @@
   header > h1 {
     font-size: 4em;
   }
+  div#icon > a > img {
+    width: 45px;
+  }
+
   nav {
     justify-content: space-evenly;
     padding: 25px;
