@@ -145,8 +145,12 @@
   div#icon {
     margin-top: 90px;
   }
+  nav {
+    
+  }
 
   nav > a {
+    margin: auto;
     flex-basis: 200px;
     background-color: #333333fd;
   }
