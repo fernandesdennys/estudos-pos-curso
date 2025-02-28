@@ -40,7 +40,10 @@
     font-size: 1.7em;
   }
   div#icon > a > img {
-    width: 25px;
+    width: 20px;
+  }
+  div#icon {
+    margin-top: 35px;
   }
 
   nav {
@@ -119,6 +122,9 @@
   }
   div#icon > a > img {
     width: 40px;
+  }
+  div#icon {
+    margin-top: 45px;
   }
 
   nav {
