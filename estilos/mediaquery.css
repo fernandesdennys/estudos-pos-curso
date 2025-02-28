@@ -35,7 +35,10 @@
   header {
     height: 70px;
     border-radius: 50px;
+    background-image: url(../imagens/html-css\ P.jpg);
+    background-position: bottom center;
   }
+
   header > h1 {
     font-size: 1.7em;
   }
@@ -72,8 +75,16 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 100px;
+    background-image: url(../imagens/html-css\ M.jpg);
+    background-position: bottom center;
+  }
   header > h1 {
     font-size: 3.2em;
+  }
+  div#icon {
+    margin-top: 50px;
   }
 
   div#icon > a > img {
@@ -119,7 +130,9 @@
 }
 @media screen and (min-width: 1024.2px) and (max-width: 1300px) {
   header {
-    height: 100px;
+    height: 150px;
+    background-image: url(../imagens/html-css\ M2.jpg);
+    background-position: bottom center;
   }
   header > h1 {
     font-size: 3em;
@@ -130,7 +143,7 @@
   }
 
   div#icon {
-    margin-top: 45px;
+    margin-top: 90px;
   }
 
   nav > a {
@@ -175,10 +188,19 @@
 @media screen and (min-width: 1300px) and (max-width: 2400px) {
   header {
     height: 150px;
+    background-image: url(../imagens/html-css\ L.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   header > h1 {
     font-size: 4em;
   }
+
+  div#icon {
+    margin-top:90px;
+  }
+
   div#icon > a > img {
     width: 45px;
   }

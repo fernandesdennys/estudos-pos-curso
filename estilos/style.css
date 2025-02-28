@@ -49,7 +49,6 @@ body {
 
 header {
   display: flex;
-  background-image: url(../imagens/html-csss.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
