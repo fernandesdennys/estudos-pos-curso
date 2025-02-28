@@ -57,7 +57,9 @@ header {
   margin: auto;
   border-radius: 100px;
   background-color: var(--color-01);
-  box-shadow: 0px 4px 10px var(--color-02);
+  box-shadow: 5px 0px 10px #90e0ef, 5px 0px 10px #90e0ef, -5px 0px 10px #FA7839, -5px 0px 10px #FA7839; 
+
+  
   transition: border-radius 0.5s ease-in-out;
 }
 
@@ -214,7 +216,8 @@ article > section {
   height: 500px;
   scroll-margin-top: 150px;
   box-shadow: 0px 0px 20px var(--color-02), 0px 0px 20px var(--color-02),
-    0px 0px 20px var(--color-02), 0px 0px 20px var(--color-04);
+    0px 0px 20px var(--color-02);
+  filter: brightness(1.5);
 }
 article > section > h2 {
   font-size: 1em;
