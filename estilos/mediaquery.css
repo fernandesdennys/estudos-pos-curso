@@ -217,7 +217,7 @@
     font-size: 1em;
     padding: 5px;
     flex-flow: row nowrap;
-    flex-basis: 245px;
+    flex-basis: 240px;
   }
   div#info > picture > img {
     height: 40vh;
