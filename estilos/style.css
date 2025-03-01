@@ -19,16 +19,24 @@
   --color-02: #90e0ef;
   --color-03: #333333;
   --color-04: #f8f9fa;
+  --color-05: #2c2c2c;
+  --color-06: #3a3a3a;
+  --color-07: #0a192f;
+  --color-08: #112d4e;
+  --color-09: #1e1e1e;
+  --color-10: #121212;
   --fonte-01: "FunnelSans";
   --fonte-02: "Inter";
   --fonte-03: "Merriweather";
 }
 
 * {
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-backdrop-filter: blur(5px);
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,20 +71,8 @@ header {
   background-color: var(--color-01);
   box-shadow: 5px 0px 10px #90e0ef, 5px 0px 10px #90e0ef, -5px 0px 10px #fa7839,
     -5px 0px 10px #fa7839;
-
   transition: border-radius 0.5s ease-in-out;
 }
-
-/*header > h1 {
-  font-family: var(--fonte-01);
-  font-size: 2.2em;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 10px;
-  text-shadow: 0px 0px 10px var(--color-02);
-  margin: auto;
-} */
-
 div#icon {
   display: flex;
   flex-flow: row wrap;
@@ -145,6 +141,7 @@ nav > a {
   margin: 5px;
   padding: 5px 4px;
   box-shadow: 0px 0px 10px var(--color-02);
+  transition: all 0.5s;
 }
 
 nav > a:hover {
@@ -153,7 +150,7 @@ nav > a:hover {
   color: var(--color-03);
   font-weight: bolder;
   transform: scale(1.2);
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 main {
   padding-top: 10px;
@@ -194,6 +191,7 @@ aside {
   text-align: center;
   border-radius: 50px;
   box-shadow: inset 0px 0px 10px;
+  backdrop-filter: blur(5px);
   transition: border-radius 0.5s ease-in-out;
 }
 aside > a {
