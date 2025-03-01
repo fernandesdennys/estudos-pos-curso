@@ -152,6 +152,7 @@
     margin-top: 90px;
   }
   nav {
+    padding-top: 30px;
   }
 
   nav > a {
@@ -164,15 +165,15 @@
     height: 42vh;
     margin: auto;
     margin: 55px 70px 40px 20px;
-    outline: ridge 10px var(--color-03);
+    border-radius: 20px;
+    outline: solid 3px var(--color-03);
   }
 
   div#info > h3 {
-    font-family: var(--fonte-03);
-    color: var(--color-03);
+    color: var(--color-04);
     font-size: 1.3em;
     font-weight: bolder;
-    text-shadow: 0px 0px 2px var(--color-04);
+    text-shadow: 0px 0px 2px var(--color-03);
     position: absolute;
     top: 4px;
     left: 30px;
@@ -185,12 +186,12 @@
   aside {
     justify-content: center;
     width: 600px;
-    height: 400px;
+    height: 320px;
   }
   aside > a > img {
     width: 100px;
     margin-top: 40px;
-    outline: 8px solid var(--color-03);
+    outline: 3px solid var(--color-03);
   }
 }
 
@@ -227,13 +228,11 @@
   div#info > picture > img {
     height: 40vh;
     margin: 60px 30px 30px 30px;
-    outline: ridge 10px var(--color-03);
+    border-radius: 15px;
+    outline: solid 3px var(--color-03);
   }
 
   div#info > h3 {
-    font-family: var(--fonte-03);
-    text-shadow: 0px 0px 2px var(--color-04);
-    color: var(--color-03);
     font-size: 1.3em;
     font-weight: bolder;
     position: absolute;
@@ -242,9 +241,10 @@
   }
 
   aside {
+    margin-top: 20px;
     justify-content: center;
     width: 800px;
-    height: 400px;
+    height: 300px;
   }
   aside > a > img {
     width: 100px;
