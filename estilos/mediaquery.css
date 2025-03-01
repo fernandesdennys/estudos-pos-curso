@@ -43,17 +43,22 @@
     font-size: 1.7em;
   }
   div#icon {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
   div#icon > a > img {
-    width: 20px;
+    width: 25px;
   }
 
   nav {
     margin: auto;
     width: 200px;
+    height: 215px;
     flex-flow: column nowrap;
+  }
+  nav > a {
+    height: 25px;
+    line-height: 15px;
   }
 
   div#info {
