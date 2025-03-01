@@ -221,7 +221,7 @@ article > section {
   text-align: center;
   margin: auto;
   margin-top: 25px;
-  width: 80%;
+  width: 85%;
   height: 500px;
   scroll-margin-top: 150px;
   box-shadow: 0px 0px 20px var(--color-02), 0px 0px 20px var(--color-02),
@@ -229,7 +229,7 @@ article > section {
   filter: brightness(1.2);
 }
 article > section > h2 {
-  font-size: 1em;
+  font-size: 0.8em;
   background-color: var(--color-02);
   box-shadow: 0px 0px 10px inset var(--color-03);
   border-radius: 100px;
