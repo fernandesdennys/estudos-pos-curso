@@ -35,7 +35,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: "-webkit-backdrop-filter: blur(5px)";
 
   margin: 0;
   padding: 0;
@@ -48,11 +48,11 @@ body {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease;
   scroll-behavior: smooth;
 }
 body {
-  /* background-image: url(../imagens/espaco.jpg); */
+  background-image: url(../imagens/espaco.jpg);
   background-color: var(--color-03);
   background-size: cover;
   background-attachment: fixed;
@@ -131,6 +131,8 @@ nav {
 }
 
 nav > a {
+  outline: solid 2px var(--color-03);
+  box-shadow: 0px 0px 10px var(--color-03);
   background-image: linear-gradient(to right, var(--color-02), var(--color-01));
   text-decoration: none;
   color: var(--color-04);
@@ -166,7 +168,7 @@ div#info {
   align-items: center;
   padding: 20px;
   border-radius: 20px;
-  border: 3px solid var(--color-03);
+  outline: 1px solid var(--color-10);
   transition: border-radius 0.5s ease-in-out;
 }
 
@@ -235,8 +237,10 @@ article > section > h2 {
   width: 80%;
   margin: auto;
   margin-top: 15px;
+} 
+article > section {
+  margin-top: 100px;
 }
-
 #md1 {
 }
 #md2 {
@@ -249,6 +253,24 @@ article > section > h2 {
 }
 
 #md5 {
+  margin-bottom: 50px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 50px;
+  background-color: var(--color-04);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.material-symbols-outlined {
+  font-size: 10px;
 }
 
 footer {
@@ -256,7 +278,7 @@ footer {
   color: var(--color-04);
   text-align: center;
   font-family: var(--fonte-01);
-  margin-top: 50px;
+  padding: 8px;
 }
 footer > p > a {
   text-decoration: none;
@@ -269,5 +291,7 @@ footer > p > a:hover {
   color: var(--color-03);
   border-radius: 10px;
   font-weight: lighter;
-  padding: 2px;
+  padding: 3px;
 }
+
+
