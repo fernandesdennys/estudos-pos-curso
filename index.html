@@ -4,28 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudos HTML3/CSS3</title>
+    <link
+      rel="shortcut icon"
+      href="icones/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaquery.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <style>
-      @keyframes appear {
-        from {
-          opacity: 0;
-          transform: scale(0.5);
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      .block {
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0 cover 40%;
-      }
-    </style>
+    
   </head>
   <body>
     <header>
@@ -121,7 +111,7 @@
 
       <div id="top">
         <button onclick="VoltarAoTopo()" type="button" id="btn">
-          <span class="material-icons"> arrow_upward </span>
+          <span class="material-icons">arrow_upward</span>
         </button>
       </div>
     </main>
@@ -133,6 +123,6 @@
         >
       </p>
     </footer>
-    <script src="JS/script.js" defer></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>

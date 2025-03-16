@@ -35,8 +35,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  backdrop-filter: "-webkit-backdrop-filter: blur(5px)";
-
+  backdrop-filter: "-webkit-backdrop-filter";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,13 +46,13 @@ body {
   background-color: var(--color-04);
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   transition: all 0.2s ease;
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(../imagens/espaco.jpg);
+  /*background-image: url(../imagens/espaco.jpg); */
   background-color: var(--color-03);
   background-size: cover;
   background-attachment: fixed;
@@ -160,17 +159,22 @@ main {
 
 div#info {
   display: flex;
-  backdrop-filter: blur(5px);
+
+  background-color: #ffffff36;
   box-shadow: 0px 0px 30px #33333310;
   width: 70%;
   height: 100%;
   margin: auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
   justify-content: center;
   align-items: center;
   padding: 20px;
   border-radius: 20px;
   outline: 1px solid var(--color-10);
+  backdrop-filter: blur(5px);
   transition: border-radius 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
 }
 
 div#info > h3 {
@@ -193,7 +197,6 @@ aside {
   text-align: center;
   border-radius: 15px;
   box-shadow: inset 0px 0px 10px;
-  backdrop-filter: blur(5px);
   transition: border-radius 0.5s ease-in-out;
 }
 aside > a {
@@ -225,7 +228,7 @@ article > section {
   margin-top: 25px;
   width: 85%;
   height: 500px;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 100px;
   box-shadow: 0px 0px 20px var(--color-02), 0px 0px 20px var(--color-02),
     0px 0px 20px var(--color-02);
   filter: brightness(1.2);
@@ -241,28 +244,28 @@ article > section > h2 {
 }
 article > section {
   margin-top: 100px;
+  height: 650px;
 }
 
 #md5 {
   margin-bottom: 50px;
 }
 
-div#top {
+#top {
   margin: auto;
-  position: fixed;
-  right: 20px;
-  bottom: 25px;
-}
-button {
-  display: flax;
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  border-radius: 50px;
   margin-bottom: 10px;
 }
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 button:hover {
-  background-color: #979797;
+  background-color: #ffffff;
   box-shadow: 0px 0px 6px var(--color-04);
 }
 #top .material-icons {
@@ -271,6 +274,7 @@ button:hover {
 }
 
 footer {
+  bottom: 0px;
   background-color: black;
   color: var(--color-04);
   text-align: center;
