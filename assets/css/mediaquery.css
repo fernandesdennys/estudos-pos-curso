@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "FunnelSans";
-  src: url("/fontes/FunnelSans.ttf") format("truetype");
+  font-family: 'FunnelSans';
+  src: url('assets/font/FunnelSans.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fontes/Inter.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('assets/font/Inter.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Merriweather";
-  src: url("/fontes/Merriweather.ttf") format("truetype");
+  font-family: 'Merriweather';
+  src: url('assets/font/Merriweather.ttf') format('truetype');
 }
 
 :root {
@@ -20,9 +20,9 @@
   --color-02: #90e0ef;
   --color-03: #333333;
   --color-04: #f8f9fa;
-  --fonte-01: "FunnelSans";
-  --fonte-02: "Inter";
-  --fonte-03: "Merriweather";
+  --fonte-01: 'FunnelSans';
+  --fonte-02: 'Inter';
+  --fonte-03: 'Merriweather';
 }
 
 * {
@@ -35,7 +35,6 @@
   header {
     height: 70px;
     border-radius: 50px;
-    background-image: url(../imagens/html-css\ P.jpg);
     background-position: bottom center;
   }
 
@@ -82,7 +81,6 @@
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   header {
     height: 100px;
-    background-image: url(../imagens/html-css\ M.jpg);
     background-position: bottom center;
   }
   header > h1 {
@@ -122,7 +120,7 @@
   }
 
   div#info > picture > img:hover {
-    box-shadow: 0px 0px 30px var(--color-03);
+    box-shadow: 0px 0px 30px var(--color-02);
     transition: box-shadow 0.4s ease-out;
   }
 
@@ -137,7 +135,6 @@
 @media screen and (min-width: 1024.2px) and (max-width: 1300px) {
   header {
     height: 150px;
-    background-image: url(../imagens/html-css\ M2.jpg);
     background-position: bottom center;
   }
   header > h1 {
@@ -198,7 +195,6 @@
 @media screen and (min-width: 1300px) and (max-width: 2400px) {
   header {
     height: 150px;
-    background-image: url(../imagens/html-css\ L.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,10 +216,15 @@
     padding: 25px;
   }
   nav > a {
-    font-size: 1em;
+    color: (var(--color-03));
     padding: 5px;
+    font-size: 1em;
+    border-radius: 30px;
+    justify-content: center;
+    align-content: center;
     flex-flow: row nowrap;
     flex-basis: 200px;
+    height: 50px;
   }
   div#info > picture > img {
     height: 40vh;

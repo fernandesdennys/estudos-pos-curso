@@ -1,17 +1,17 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "FunnelSans";
-  src: url("/fontes/FunnelSans.ttf") format("truetype");
+  font-family: 'FunnelSans';
+  src: url('assets/font/FunnelSans.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fontes/Inter.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('assets/font/Inter.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Merriweather";
-  src: url("/fontes/Merriweather.ttf") format("truetype");
+  font-family: 'Merriweather';
+  src: url('assets/font/Merriweather.ttf') format('truetype');
 }
 
 :root {
@@ -25,17 +25,14 @@
   --color-08: #112d4e;
   --color-09: #1e1e1e;
   --color-10: #121212;
-  --fonte-01: "FunnelSans";
-  --fonte-02: "Inter";
-  --fonte-03: "Merriweather";
+  --fonte-01: 'FunnelSans';
+  --fonte-02: 'Inter';
+  --fonte-03: 'Merriweather';
 }
 
 * {
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  backdrop-filter: "-webkit-backdrop-filter";
+  backdrop-filter: '-webkit-backdrop-filter';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,7 +40,6 @@
 
 html,
 body {
-  background-color: var(--color-04);
   overflow-x: hidden;
   overflow-y: auto;
   min-height: 100vh;
@@ -52,8 +48,8 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  /*background-image: url(../imagens/espaco.jpg); */
-  background-color: var(--color-03);
+  background-image: url('/assets/img/espaco.jpg');
+  /*background-color: var(--color-10); */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -69,7 +65,7 @@ header {
   height: 150px;
   margin: auto;
   border-radius: 100px;
-  background-color: var(--color-01);
+  background-color: var(--color-10);
   box-shadow: 5px 0px 10px #90e0ef, 5px 0px 10px #90e0ef, -5px 0px 10px #fa7839,
     -5px 0px 10px #fa7839;
   transition: border-radius 0.5s ease-in-out;
@@ -135,8 +131,8 @@ nav > a {
   box-shadow: 0px 0px 10px var(--color-03);
   background-image: linear-gradient(to right, var(--color-02), var(--color-01));
   text-decoration: none;
-  color: var(--color-04);
-  font-family: var(--fonte-01);
+  color: var(--color-10);
+  font-family: var(--fonte-03);
   font-weight: bolder;
   font-size: 0.8em;
   border-radius: 10px;
@@ -146,7 +142,6 @@ nav > a {
 }
 
 nav > a:hover {
-  background-color: var(--color-04);
   color: var(--color-04);
   transform: scale(1.2);
   transition: all 0.7s;
@@ -159,7 +154,6 @@ main {
 
 div#info {
   display: flex;
-
   background-color: #ffffff36;
   box-shadow: 0px 0px 30px #33333310;
   width: 70%;
@@ -219,7 +213,7 @@ article {
 }
 article > section {
   display: flex;
-  background-color: var(--color-10);
+  background-color: var(--color-03);
   font-family: var(--fonte-01);
   border-radius: 20px;
   font-size: 1.5em;
