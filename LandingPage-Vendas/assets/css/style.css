@@ -25,11 +25,11 @@ body {
 header {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--color-02);
+  background-color: var(--color-01);
   border-radius: 0px 0px 30px 30px;
   width: 90%;
   margin: auto;
-  padding: 10px 10px 0px 0px;
+  padding: 10px 10px 5px 0px;
   margin-bottom: 50px;
 }
 header > h1 {
@@ -55,14 +55,13 @@ header > nav > a {
   color: var(--color-00);
   background-color: var(--color-06);
   border: solid 1px var(--color-00);
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 5px 15px;
   border-radius: 20px;
   text-decoration: none;
   margin-left: 10px;
 }
 nav > a:hover {
-  background-color: var(--color-02);
+  background-color: var(--color-03);
 }
 section {
   max-width: 80%;
