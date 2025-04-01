@@ -31,6 +31,7 @@ header {
   margin: auto;
   padding: 10px 10px 5px 0px;
   margin-bottom: 50px;
+  border-bottom: solid 3px var(--color-00);
 }
 header > h1 {
   color: var(--color-00);
@@ -61,9 +62,11 @@ header > nav > a {
   margin-left: 10px;
 }
 nav > a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
   background-color: var(--color-03);
 }
-section {
+.planos {
   max-width: 80%;
   margin: auto;
   height: 250px;
@@ -74,27 +77,42 @@ section {
   border-radius: 20px;
 }
 div {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   min-width: 200px;
-  height: 250px;
+  height: 270px;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
   background-color: var(--color-04);
   color: var(--color-00);
   border: solid 1px var(--color-00);
 }
+div:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
 div > h1 {
   padding: 15px;
+}
+div > h2 {
+  color: var(--color-01);
 }
 div > ul > li {
   list-style: none;
   padding-bottom: 5px;
 }
-.left {
+div > p {
+  color: var(--color-01);
+  margin: auto;
+  padding: 3px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 5px black;
+  width: 150px;
 }
-.midle {
-}
-.right {
-}
-footer {
+div > a {
+  text-decoration: none;
+  color: var(--color-00);
+  background-color: #15bdf5;
+  padding: 5px 45px;
+  border-radius: 5px;
 }
