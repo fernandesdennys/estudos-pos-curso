@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'FunnelSans';
+  src: url('assets/font/FunnelSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/font/Inter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('assets/font/Merriweather.ttf') format('truetype');
+}
+
+:root {
+  --color-01: #0077b6;
+  --color-02: #90e0ef;
+  --color-03: #333333;
+  --color-04: #f8f9fa;
+  --color-05: #2c2c2c;
+  --color-06: #3a3a3a;
+  --color-07: #0a192f;
+  --color-08: #112d4e;
+  --color-09: #1e1e1e;
+  --color-10: #121212;
+  --fonte-01: 'FunnelSans';
+  --fonte-02: 'Inter';
+  --fonte-03: 'Merriweather';
+}
+
+* {
+  background-size: cover;
+  backdrop-filter: '-webkit-backdrop-filter';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  width: 100vw;
+  transition: all 0.2s ease;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url('/assets/img/espaco.jpg');
+  /*background-color: var(--color-10); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header {
+  display: flex;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  border-radius: 100px;
+  background-color: var(--color-10);
+  box-shadow: 5px 0px 10px #90e0ef, 5px 0px 10px #90e0ef, -5px 0px 10px #fa7839,
+    -5px 0px 10px #fa7839;
+  transition: border-radius 0.5s ease-in-out;
+}
+div#icon {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  margin: auto;
+  margin-top: 90px;
+}
+div#icon > a > img {
+  border-radius: 50%;
+  transition: all 0.5s;
+  outline: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.658);
+}
+
+div#icon > a > img.insta:hover {
+  box-shadow: 0px 0px 10px #d8005a, 0px 0px 10px #d8005a, 0px 0px 10px #d8005a,
+    0px 0px 10px #d8005a;
+  background-color: #d8005a;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+div#icon > a > img.face:hover {
+  box-shadow: 0px 0px 10px #475993, 0px 0px 10px #475993, 0px 0px 10px #475993,
+    0px 0px 10px #475993;
+  background-color: #475993;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+div#icon > a > img.link:hover {
+  box-shadow: 0px 0px 10px #0379b8, 0px 0px 10px #0379b8, 0px 0px 10px #0379b8,
+    0px 0px 10px #0379b8;
+  background-color: #0379b8;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+
+div#icon > a > img.git:hover {
+  box-shadow: 0px 0px 10px var(--color-04), 0px 0px 10px var(--color-04),
+    0px 0px 10px var(--color-04);
+  background-color: #ffffff;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+
+header > div#icon > a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  padding: 10px 0px 15px 0px;
+}
+
+nav > a {
+  outline: solid 2px var(--color-03);
+  box-shadow: 0px 0px 10px var(--color-03);
+  background-image: linear-gradient(to right, var(--color-02), var(--color-01));
+  text-decoration: none;
+  color: var(--color-10);
+  font-family: var(--fonte-03);
+  font-weight: bolder;
+  font-size: 0.8em;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 4px;
+  transition: all 0.5s;
+}
+
+nav > a:hover {
+  color: var(--color-04);
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+main {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div#info {
+  display: flex;
+  background-color: #ffffff36;
+  box-shadow: 0px 0px 30px #33333310;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  outline: 1px solid var(--color-10);
+  backdrop-filter: blur(5px);
+  transition: border-radius 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+}
+
+div#info > h3 {
+  font-family: var(--fonte-03);
+  color: var(--color-04);
+  text-shadow: 0px 0px 2px var(--color-03);
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--color-04);
+  border-radius: 30px 0px;
+  padding: 10px;
+  font-family: var(--fonte-03);
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px;
+  transition: border-radius 0.5s ease-in-out;
+}
+aside > a {
+  padding-top: 15px;
+}
+
+aside > a > img {
+  width: 55px;
+  border: 4px solid var(--color-03);
+}
+
+aside > a > img:hover {
+  transform: scale(0.9);
+  border-radius: 50px;
+  transition: border-radius 0.6s ease-in-out;
+}
+
+article {
+  padding-top: 10px;
+}
+article > section {
+  display: flex;
+  background-color: var(--color-03);
+  font-family: var(--fonte-01);
+  border-radius: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  width: 85%;
+  height: 500px;
+  scroll-margin-top: 100px;
+  box-shadow: 0px 0px 20px var(--color-02), 0px 0px 20px var(--color-02),
+    0px 0px 20px var(--color-02);
+  filter: brightness(1.2);
+}
+article > section > h2 {
+  font-size: 0.8em;
+  background-color: var(--color-02);
+  box-shadow: 0px 0px 10px inset var(--color-03);
+  border-radius: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+article > section {
+  margin-top: 100px;
+  height: 650px;
+}
+
+#md5 {
+  margin-bottom: 50px;
+}
+
+#top {
+  margin: auto;
+  margin-bottom: 10px;
+}
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px var(--color-04);
+}
+#top .material-icons {
+  font-size: 40px;
+  color: var(--color-10);
+}
+
+footer {
+  bottom: 0px;
+  background-color: black;
+  color: var(--color-04);
+  text-align: center;
+  font-family: var(--fonte-01);
+  padding: 8px;
+}
+footer > p > a {
+  text-decoration: none;
+  color: var(--color-02);
+  font-weight: bolder;
+}
+footer > p > a:hover {
+  background-color: var(--color-04);
+  outline: 2px solid var(--color-03);
+  color: var(--color-03);
+  border-radius: 10px;
+  font-weight: lighter;
+  padding: 3px;
+}
